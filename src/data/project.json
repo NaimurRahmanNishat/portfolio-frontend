@@ -1,0 +1,494 @@
+[
+  {
+    "title": "Next Blog",
+    "image": "/blogs.png",
+    "category": "Fullstack Development",
+    "description": {
+      "overview": "Sebaghar is a telemedicine platform in Bangladesh, offering online doctor consultations via video, text, and audio calls. It provides a convenient way for patients to connect with doctors from various hospitals across Bangladesh, particularly for emergency situations. Sebaghar also offers services like digital prescriptions, home diagnostic services, home nursing, and medicine delivery.",
+      "features": [
+        {
+          "name": "Authentication System",
+          "description": "Clerk authentication beautiful interface that works on all devices"
+        },
+        {
+          "name": "Responsive Dashboard",
+          "description": "Beautiful interface that works on all devices"
+        },
+        {
+          "name": "Material Management",
+          "description": "Browse materials"
+        },
+        {
+          "name": "Infinite Scrolling",
+          "description": "Load materials as you scroll for better performance"
+        },
+        {
+          "name": "Dark/Light Mode",
+          "description": "Full theme support with seamless transitions"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React 19",
+          "description": "Modern UI library"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Type safety and better developer experience"
+        },
+        {
+          "name": "Next.js freamwork",
+          "description": "React framework with App Router"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework"
+        },
+        {
+          "name": "shadcn/ui",
+          "description": "Accessible and customizable component library"
+        }
+      ]
+    },
+    "hosting": "Vercel",
+    "versionControl": "Git, GitHub, & Vs Code",
+    "link": "https://amar-sebaghor.vercel.app",
+    "github": "https://github.com/NaimurRahmanNishat/nextjs_blog"
+  },
+  {
+    "title": "Sheba Ghor",
+    "image": "/shebaghor.png",
+    "category": "Frontend Development",
+    "description": {
+      "overview": "Sebaghar is a telemedicine platform in Bangladesh, offering online doctor consultations via video, text, and audio calls. It provides a convenient way for patients to connect with doctors from various hospitals across Bangladesh, particularly for emergency situations. Sebaghar also offers services like digital prescriptions, home diagnostic services, home nursing, and medicine delivery.",
+      "features": [
+        {
+          "name": "Authentication System",
+          "description": "Clerk authentication beautiful interface that works on all devices"
+        },
+        {
+          "name": "Responsive Dashboard",
+          "description": "Beautiful interface that works on all devices"
+        },
+        {
+          "name": "Material Management",
+          "description": "Browse materials"
+        },
+        {
+          "name": "Infinite Scrolling",
+          "description": "Load materials as you scroll for better performance"
+        },
+        {
+          "name": "Dark/Light Mode",
+          "description": "Full theme support with seamless transitions"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React 19",
+          "description": "Modern UI library"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Type safety and better developer experience"
+        },
+        {
+          "name": "Next.js freamwork",
+          "description": "React framework with App Router"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework"
+        },
+        {
+          "name": "shadcn/ui",
+          "description": "Accessible and customizable component library"
+        }
+      ]
+    },
+    "hosting": "Vercel",
+    "versionControl": "Git, GitHub, & Vs Code",
+    "link": "https://amar-sebaghor.vercel.app",
+    "github": "https://github.com/NaimurRahmanNishat/amar-sebaghor"
+  },
+  {
+    "title": "News Portal",
+    "image": "/newsportal.png",
+    "category": "Backend Development",
+    "description": {
+      "overview": "A meta description for a blog website is a short, concise summary of a blog post or page that appears in search engine results pages (SERPs) below the title and URL. It's designed to entice users to click on the link and visit the page, essentially acting as a brief advertisement.",
+      "features": [
+        {
+          "name": "Authentication System",
+          "description": "Clerk authentication beautiful interface that works on all devices"
+        },
+        {
+          "name": "Responsive Dashboard",
+          "description": "Beautiful interface that works on all devices"
+        },
+        {
+          "name": "Material Management",
+          "description": "Browse materials"
+        },
+        {
+          "name": "Infinite Scrolling",
+          "description": "Load materials as you scroll for better performance"
+        },
+        {
+          "name": "Dark/Light Mode",
+          "description": "Full theme support with seamless transitions"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React 19",
+          "description": "Modern UI library"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Type safety and better developer experience"
+        },
+        {
+          "name": "Next.js freamwork",
+          "description": "React framework with App Router"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework"
+        },
+        {
+          "name": "shadcn/ui",
+          "description": "Accessible and customizable component library"
+        }
+      ]
+    },
+    "hosting": "Vercel",
+    "versionControl": "Git, GitHub, & Vs Code",
+    "link": "https://news-portal-lilac.vercel.app",
+    "github": "https://github.com/NaimurRahmanNishat/news-portal"
+  },
+  {
+    "title": "Airport Management System",
+    "image": "/airport.png",
+    "category": "Frontend Development",
+    "description": {
+      "overview": "A meta description for a blog website is a short, concise summary of a blog post or page that appears in search engine results pages (SERPs) below the title and URL. It's designed to entice users to click on the link and visit the page, essentially acting as a brief advertisement.",
+      "features": [
+        {
+          "name": "Authentication System",
+          "description": "Clerk authentication beautiful interface that works on all devices"
+        },
+        {
+          "name": "Responsive Dashboard",
+          "description": "Beautiful interface that works on all devices"
+        },
+        {
+          "name": "Material Management",
+          "description": "Browse materials"
+        },
+        {
+          "name": "Infinite Scrolling",
+          "description": "Load materials as you scroll for better performance"
+        },
+        {
+          "name": "Dark/Light Mode",
+          "description": "Full theme support with seamless transitions"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React 19",
+          "description": "Modern UI library"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Type safety and better developer experience"
+        },
+        {
+          "name": "Next.js freamwork",
+          "description": "React framework with App Router"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework"
+        },
+        {
+          "name": "shadcn/ui",
+          "description": "Accessible and customizable component library"
+        }
+      ]
+    },
+    "hosting": "Vercel",
+    "versionControl": "Git, GitHub, & Vs Code",
+    "link": "https://airport-management-psi.vercel.app",
+    "github": "https://github.com/NaimurRahmanNishat/airport_management"
+  },
+  {
+    "title": "Furniture Shop",
+    "image": "/furniture.png",
+    "category": "Frontend Development",
+    "description": {
+      "overview": "A meta description for a blog website is a short, concise summary of a blog post or page that appears in search engine results pages (SERPs) below the title and URL. It's designed to entice users to click on the link and visit the page, essentially acting as a brief advertisement.",
+      "features": [
+        {
+          "name": "Responsive Dashboard",
+          "description": "Beautiful interface that works on all devices"
+        },
+        {
+          "name": "Material Management",
+          "description": "Browse materials"
+        },
+        {
+          "name": "Infinite Scrolling",
+          "description": "Load materials as you scroll for better performance"
+        },
+        {
+          "name": "Dark/Light Mode",
+          "description": "Full theme support with seamless transitions"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React 19",
+          "description": "Modern UI library"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Type safety and better developer experience"
+        },
+        {
+          "name": "Router dom",
+          "description": "React framework with App Router"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework"
+        },
+        {
+          "name": "shadcn/ui",
+          "description": "Accessible and customizable component library"
+        }
+      ]
+    },
+    "hosting": "Vercel",
+    "versionControl": "Git, GitHub, & Vs Code",
+    "link": "https://furniture-sooty.vercel.app",
+    "github": "https://github.com/NaimurRahmanNishat/furniture"
+  },
+  {
+    "title": "Resturant website",
+    "image": "/resturent.png",
+    "category": "Frontend Development",
+    "description": {
+      "overview": "A meta description for a blog website is a short, concise summary of a blog post or page that appears in search engine results pages (SERPs) below the title and URL. It's designed to entice users to click on the link and visit the page, essentially acting as a brief advertisement.",
+      "features": [
+        {
+          "name": "Responsive Dashboard",
+          "description": "Beautiful interface that works on all devices"
+        },
+        {
+          "name": "Material Management",
+          "description": "Browse materials"
+        },
+        {
+          "name": "Infinite Scrolling",
+          "description": "Load materials as you scroll for better performance"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React 19",
+          "description": "Modern UI library"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Type safety and better developer experience"
+        },
+        {
+          "name": "Router dom",
+          "description": "React framework with App Router"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework"
+        },
+        {
+          "name": "shadcn/ui",
+          "description": "Accessible and customizable component library"
+        }
+      ]
+    },
+    "hosting": "Vercel",
+    "versionControl": "Git, GitHub, & Vs Code",
+    "link": "https://resturent-lemon.vercel.app",
+    "github": "https://github.com/NaimurRahmanNishat/resturent"
+  },
+  {
+    "title": "MetaBlog",
+    "image": "/metablog.png",
+    "category": "Backend Development",
+    "description": {
+      "overview": "A meta description for a blog website is a short, concise summary of a blog post or page that appears in search engine results pages (SERPs) below the title and URL. It's designed to entice users to click on the link and visit the page, essentially acting as a brief advertisement.",
+      "features": [
+        {
+          "name": "Authentication System",
+          "description": "Secure login with JWT token management"
+        },
+        {
+          "name": "Responsive Dashboard",
+          "description": "Beautiful interface that works on all devices"
+        },
+        {
+          "name": "Material Management",
+          "description": "Browse materials"
+        },
+        {
+          "name": "Infinite Scrolling",
+          "description": "Load materials as you scroll for better performance"
+        },
+        {
+          "name": "Dark/Light Mode",
+          "description": "Full theme support with seamless transitions"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React 19",
+          "description": "Modern UI library"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Type safety and better developer experience"
+        },
+        {
+          "name": "Router dom",
+          "description": "React framework with App Router"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework"
+        },
+        {
+          "name": "shadcn/ui",
+          "description": "Accessible and customizable component library"
+        }
+      ]
+    },
+    "hosting": "Vercel",
+    "versionControl": "Git, GitHub, & Vs Code",
+    "link": "https://meta-blog-frontend.vercel.app",
+    "github": "https://meta-blog-backend-five.vercel.app/"
+  },
+  {
+    "title": "Super Shop Ecommerce",
+    "image": "/ecommerce.png",
+    "category": "Fullstack Development",
+    "description": {
+      "overview": "A supershop e-commerce description can refer to both the concept of an online store for a physical super shop or a dedicated e-commerce platform designed to mimic or enhance the supershop experience. ",
+      "features": [
+        {
+          "name": "Authentication System",
+          "description": "Secure login with JWT token management"
+        },
+        {
+          "name": "Responsive Dashboard",
+          "description": "Beautiful interface that works on all devices"
+        },
+        {
+          "name": "Material Management",
+          "description": "Browse materials"
+        },
+        {
+          "name": "Infinite Scrolling",
+          "description": "Load materials as you scroll for better performance"
+        },
+        {
+          "name": "Dark/Light Mode",
+          "description": "Full theme support with seamless transitions"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React 19",
+          "description": "Modern UI library"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Type safety and better developer experience"
+        },
+        {
+          "name": "Router dom",
+          "description": "React framework with App Router"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework"
+        },
+        {
+          "name": "shadcn/ui",
+          "description": "Accessible and customizable component library"
+        }
+      ]
+    },
+    "hosting": "Vercel",
+    "versionControl": "Git, GitHub, & Vs Code",
+    "link": "https://nishat-frontend.vercel.app",
+    "github": "https://github.com/NaimurRahmanNishat/nishat-frontend"
+  },
+  {
+    "title": "BookShop Ecommerce",
+    "image": "/bookshop.png",
+    "category": "Fullstack Development",
+    "description": {
+      "overview": "Professional React dashboard application for managing materials with a modern UI, built with React, TypeScript, and shadcn/ui components.",
+      "features": [
+        {
+          "name": "Authentication System",
+          "description": "Secure login with JWT token management"
+        },
+        {
+          "name": "Responsive Dashboard",
+          "description": "Beautiful interface that works on all devices"
+        },
+        {
+          "name": "Material Management",
+          "description": "Browse materials"
+        },
+        {
+          "name": "Infinite Scrolling",
+          "description": "Load materials as you scroll for better performance"
+        },
+        {
+          "name": "Dark/Light Mode",
+          "description": "Full theme support with seamless transitions"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "React 19",
+          "description": "Modern UI library"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Type safety and better developer experience"
+        },
+        {
+          "name": "Next.js",
+          "description": "React framework with App Router"
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Utility-first CSS framework"
+        },
+        {
+          "name": "shadcn/ui",
+          "description": "Accessible and customizable component library"
+        }
+      ]
+    },
+    "hosting": "Vercel",
+    "versionControl": "Git, GitHub, & Vs Code",
+    "link": "https://booknest-client-zy9d.vercel.app/",
+    "github": "https://github.com/NaimurRahmanNishat/booknest-client"
+  }
+]
