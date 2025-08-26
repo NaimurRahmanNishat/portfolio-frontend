@@ -2,7 +2,7 @@ import React from 'react'
 
 const BlogsPage = () => {
   return (
-    <div>BlogsPage</div>
+    <div className="max-w-screen-xl container mx-auto px-4">BlogsPage</div>
   )
 }
 

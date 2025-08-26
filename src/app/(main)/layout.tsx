@@ -14,7 +14,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         <ThemeProvider>
           <Navbar />
           <StairTransition>
-            <main className="max-w-screen-xl container mx-auto px-4">
+            <main>
               <PageTransition>
                 {children}
                 <ScrollTop />
