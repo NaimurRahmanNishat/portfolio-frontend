@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <main>
       <WarpBackground>
-        <div className="max-w-screen-xl container mx-auto px-4 md:px-0">
+        <div className="max-w-screen-xl container mx-auto px-2">
           <h1 className="md:text-5xl text-4xl font-bold text-center md:pt-8 pt-4 font-secondary textGradient">
             Get In Touch
           </h1>
@@ -25,7 +25,7 @@ const Contact = () => {
             my contact information.
           </p>
           {/* grid contact form */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 md:px-8 px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 md:px-8">
             {/* contact form */}
             <div className="relative w-full h-full rounded-sm overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-pink-600 via-cyan-600 to-indigo-600" />

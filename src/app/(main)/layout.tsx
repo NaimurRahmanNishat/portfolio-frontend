@@ -6,6 +6,7 @@ import Footer from "@/components/shared/Footer";
 import StairTransition from "@/components/shared/StairTransition";
 import PageTransition from "@/components/shared/PageTransition";
 import ScrollTop from "@/components/shared/ScrollTop";
+import { ToastContainer } from "react-toastify";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -23,6 +24,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
           </StairTransition>
           <Footer />
         </ThemeProvider>
+        <ToastContainer />
       </StoreProvider>
     </div>
   );

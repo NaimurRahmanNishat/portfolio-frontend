@@ -47,7 +47,7 @@ const ProjectPage = () => {
   if (isError) return <Error />;
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="max-w-screen-xl container mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">
         Our Projects
       </h2>
