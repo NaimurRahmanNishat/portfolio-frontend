@@ -3,8 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { ShinyButton } from "../ui/ShinyButton";
 
 const Resume = () => {
-  const driveLink =
-    "https://drive.google.com/file/d/14JA06T0wKLAdpOaOJGJzQ9Ge9UANHuhg/view?usp=drive_link";
+  const driveLink = "https://drive.google.com/uc?export=download&id=1zbiffayvfd_yGARTtg3h2i_SzWZci0Tj";
 
   const handleResumeClick = () => {
     window.open(driveLink, "_blank");

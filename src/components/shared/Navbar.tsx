@@ -10,7 +10,7 @@ import StickyNavbar from "./StickyNavbar";
 const Navbar = () => {
   return (
     <>
-      <header className="h-20 flex items-center justify-between w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="h-20 border-b md:border-0 flex items-center justify-between w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="max-w-screen-xl container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}

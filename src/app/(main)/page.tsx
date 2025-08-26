@@ -1,12 +1,22 @@
-import { WordRotate } from '@/components/ui/WordRotate';
-import React from 'react'
-
-const role: string[] = ["Frontend Developer", "Backend Developer", "Fullstack Developer", "Software Engineer", "SQA Engineer", "DevOps Engineer", "Data Engineer", "Data Analyst", "Data Scientist", "Machine Learning Engineer", "Cloud Engineer", "Web App Developer"];
-
+import Hero from '@/components/home/Hero';
+import { DotPattern } from '@/components/ui/DotPattern';
+// import Blogs from '@/components/home/Blogs';
+// import MyJourny from '@/components/home/MyJourny';
+// import Project from '@/components/home/Project';
+// import Qualification from '@/components/home/Qualification';
+// import Services from '@/components/home/Services';
+// import Skills from '@/components/home/Skills';
 const Page = () => {
   return (
-    <div className="max-w-screen-xl container mx-auto px-4">
-      <WordRotate words={role} className='text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 via-pink-600'/>
+    <div className="max-w-screen-xl container mx-auto px-4 min-h-screen">
+      <DotPattern className='opacity-10'/>
+      <Hero/>
+      {/* <Skills/>
+      <MyJourny/>
+      <Services/>
+      <Project/>
+      <Qualification/>
+      <Blogs/> */}
     </div>
   )
 }
