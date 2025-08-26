@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import { WarpBackground } from "@/components/ui/WarpBackground";
+import ContactMe from "@/components/contact/ContactMe";
 
 const Contact = () => {
   const [mounted, setMounted] = useState<boolean>(false);
   useEffect(() => setMounted(true), [mounted]);
 
   if (!mounted) {
-    return null; 
+    return null;
   }
 
   return (
@@ -27,15 +28,24 @@ const Contact = () => {
           {/* grid contact form */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 md:px-8">
             {/* contact form */}
-            <div className="relative w-full h-full rounded-sm overflow-hidden">
+            <div className="relative w-full h-fit rounded-sm overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-pink-600 via-cyan-600 to-indigo-600" />
-              <ContactForm/>
+              <ContactForm />
             </div>
             {/* contact info */}
-            <div className="relative w-full h-[400px] rounded-sm overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-pink-600 via-cyan-600 to-indigo-600" />
-              <div className="w-full h-full border rounded-sm p-4">
-                <ContactInfo/>
+            <div className="flex flex-col gap-4">
+              <div className="relative w-full h-fit rounded-sm overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-pink-600 via-cyan-600 to-indigo-600" />
+                <div className="w-full h-full border rounded-sm p-4">
+                  <ContactInfo />
+                </div>
+              </div>
+              {/* contact me card */}
+              <div className="relative w-full h-fit rounded-sm overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-pink-600 via-cyan-600 to-indigo-600" />
+                <div className="w-full h-full border rounded-sm p-4">
+                  <ContactMe />
+                </div>
               </div>
             </div>
           </div>
