@@ -28,13 +28,13 @@ const socialLinks: socialLinksProps[] = [
     { path: "https://www.linkedin.com/in/naimur-rahman-0a8046381", icon: <FaLinkedin /> },
     { path: "https://github.com/NaimurRahmanNishat", icon: <IoLogoGithub /> },
     { path: "https://www.facebook.com/profile.php?id=61576332312271", icon: <IoLogoFacebook /> },
-    { path: "https://x.com/naimurrahmun34", icon: <CiInstagram /> },
+    { path: "https://www.instagram.com/34naimurrahman", icon: <CiInstagram /> },
     { path: "https://x.com/naimurrahmun34", icon: <FaXTwitter /> },
 ]
 
 const Hero = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-20">
             {/* left side content start */}
             <div className="flex flex-col gap-4 md:w-[50%]">
                 <div className="pt-4 md:pt-8">
@@ -52,7 +52,7 @@ const Hero = () => {
                         options={{
                             strings: typewrite,
                             autoStart: true,
-                            delay: 10,
+                            delay: 5,
                             deleteSpeed: 10,
                             loop: true,
                         }}
