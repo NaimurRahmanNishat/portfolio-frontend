@@ -7,6 +7,7 @@ import StairTransition from "@/components/shared/StairTransition";
 import PageTransition from "@/components/shared/PageTransition";
 import ScrollTop from "@/components/shared/ScrollTop";
 import { ToastContainer } from "react-toastify";
+import { DotPattern } from "@/components/ui/DotPattern";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -14,14 +15,17 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       <StoreProvider>
         <ThemeProvider>
           <Navbar />
-          <StairTransition>
-            <main>
-              <PageTransition>
-                {children}
-                <ScrollTop />
-              </PageTransition>
-            </main>
-          </StairTransition>
+          <div className="relative w-full min-h-screen dark:bg-black/60">
+            <StairTransition>
+              <DotPattern className='opacity-8' />
+              <main className="relative z-0">
+                <PageTransition>
+                  {children}
+                  <ScrollTop />
+                </PageTransition>
+              </main>
+            </StairTransition>
+          </div>
           <Footer />
         </ThemeProvider>
         <ToastContainer />
