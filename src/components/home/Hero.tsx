@@ -6,22 +6,17 @@ import dynamic from "next/dynamic";
 // Lightweight imports
 import { RiExternalLinkLine } from "react-icons/ri";
 import { MdOutlineContactPhone } from "react-icons/md";
-import { IoCloudDownloadOutline, IoLogoFacebook, IoLogoGithub } from "react-icons/io5";
-import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { CiInstagram } from "react-icons/ci";
-
+import { IoCloudDownloadOutline } from "react-icons/io5";
 // Local components (keep them optimized too)
 import { WordRotate } from "@/components/ui/WordRotate";
 import { SparklesText } from "../ui/SparklesText";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import HeroImageCards from "./HeroImageCards";
+import { ShinyButton } from "../ui/ShinyButton";
+import Socials from "./Socials";
 
 const Typewriter = dynamic(() => import("typewriter-effect"), { ssr: false });
 
-interface socialLinksProps {
-  path: string;
-  icon: React.ReactNode;
-}
+
 
 const role: string[] = [
   "Frontend Developer",
@@ -41,16 +36,8 @@ const role: string[] = [
 const typewrite: string[] = ["I'm a passionate full-stack developer dedicated to crafting modern, high-performance web applications with a seamless user experience. With a strong foundation in computer science and hands-on expertise in modern technologies, I thrive on transforming ideas into impactful digital solutions. Let's turn ideas into reality and create something extraordinary together!",];
 
 // Google Drive view + download links
-const cvView: string ="https://drive.google.com/file/d/1zbiffayvfd_yGARTtg3h2i_SzWZci0Tj/view?usp=drive_link";
-const cvDownload: string ="https://drive.google.com/uc?export=download&id=1zbiffayvfd_yGARTtg3h2i_SzWZci0Tj";
-
-const socialLinks: socialLinksProps[] = [
-  { path: "https://www.linkedin.com/in/naimur-rahman-0a8046381", icon: <FaLinkedin /> },
-  { path: "https://github.com/NaimurRahmanNishat", icon: <IoLogoGithub /> },
-  { path: "https://www.facebook.com/profile.php?id=61576332312271", icon: <IoLogoFacebook /> },
-  { path: "https://www.instagram.com/34naimurrahman", icon: <CiInstagram /> },
-  { path: "https://x.com/naimurrahmun34", icon: <FaXTwitter /> },
-];
+const cvView: string = "https://drive.google.com/file/d/1zbiffayvfd_yGARTtg3h2i_SzWZci0Tj/view?usp=drive_link";
+const cvDownload: string = "https://drive.google.com/uc?export=download&id=1zbiffayvfd_yGARTtg3h2i_SzWZci0Tj";
 
 const Hero = () => {
   return (
@@ -79,7 +66,7 @@ const Hero = () => {
               options={{
                 strings: typewrite,
                 autoStart: true,
-                delay: 20, 
+                delay: 20,
                 deleteSpeed: 15,
                 loop: true,
               }}
@@ -88,13 +75,15 @@ const Hero = () => {
 
           {/* buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Link
-              href="/contact"
-              className="px-6 py-3 border border-purple-500 rounded-md hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
-            >
-              <MdOutlineContactPhone />
-              Contact Me
-            </Link>
+            <ShinyButton className="py-3 px-6 border border-purple-500 rounded-md transition-all duration-300 flex items-center justify-center gap-2">
+              <Link
+                href="/contact"
+                className="flex items-center justify-center gap-2"
+              >
+                <MdOutlineContactPhone />
+                Contact Me
+              </Link>
+            </ShinyButton>
 
             <Link
               href={cvDownload}
@@ -105,48 +94,22 @@ const Hero = () => {
               <IoCloudDownloadOutline />
             </Link>
 
-            <Link
-              href={cvView}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 border border-purple-500 rounded-md hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
-            >
-              View CV
-              <RiExternalLinkLine />
-            </Link>
+            <ShinyButton className="px-6 py-3 border border-purple-500 rounded-md transition-all duration-300 flex items-center justify-center gap-2">
+              <Link
+                href={cvView}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                View CV
+                <RiExternalLinkLine />
+              </Link>
+            </ShinyButton>
           </div>
 
           {/* Social links */}
           <div className="flex gap-4 mt-6 text-2xl">
-            {socialLinks.map((item, i) => (
-              <Tooltip key={i}>
-                <TooltipTrigger asChild>
-                  <Link
-                    href={item.path}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 border rounded-full hover:scale-110 transition-all duration-300 flex items-center justify-center"
-                  >
-                    {item.icon}
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>
-                    {item.path.includes("linkedin")
-                      ? "LinkedIn"
-                      : item.path.includes("github")
-                      ? "GitHub"
-                      : item.path.includes("facebook")
-                      ? "Facebook"
-                      : item.path.includes("instagram")
-                      ? "Instagram"
-                      : item.path.includes("x")
-                      ? "X"
-                      : "Profile"}
-                  </p>
-                </TooltipContent>
-              </Tooltip>
-            ))}
+            <Socials/>
           </div>
         </div>
 

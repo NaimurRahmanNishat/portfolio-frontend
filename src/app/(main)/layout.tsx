@@ -8,6 +8,7 @@ import PageTransition from "@/components/shared/PageTransition";
 import ScrollTop from "@/components/shared/ScrollTop";
 import { ToastContainer } from "react-toastify";
 import { DotPattern } from "@/components/ui/DotPattern";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -20,7 +21,9 @@ const layout = ({ children }: { children: React.ReactNode }) => {
               <DotPattern className='opacity-8' />
               <main className="relative z-0">
                 <PageTransition>
+                  <TooltipProvider>
                   {children}
+                  </TooltipProvider>
                   <ScrollTop />
                 </PageTransition>
               </main>
