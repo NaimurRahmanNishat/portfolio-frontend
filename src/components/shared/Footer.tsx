@@ -1,7 +1,7 @@
 import React from "react";
-import { InteractiveGridPattern } from "../ui/InteractiveGridPattern";
 import Socials from "../home/Socials";
 import { Code, Leaf, Server, Briefcase, ChevronRight, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 interface serviceProps {
   icon: React.ElementType;
@@ -26,13 +26,8 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="relative w-full overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 -z-10 opacity-5">
-        <InteractiveGridPattern />
-      </div>
-
-      <div className="relative z-10 max-w-screen-xl container mx-auto px-4 md:px-0">
+    <footer>
+      <div className="max-w-screen-xl container mx-auto px-4 md:px-0">
         {/* top section */}
         <section className="flex flex-col md:flex-row justify-between gap-4 md:gap-8 py-8 md:py-20">
           {/* left side */}
@@ -77,7 +72,9 @@ const Footer = () => {
                           <Icon size={16} className="text-gray-300" />
                         </div>
                         {/* Title */}
-                        <span className="font-medium hover:text-purple-500">{service.title}</span>
+                        <span className="font-medium hover:text-purple-500">
+                          {service.title}
+                        </span>
                       </div>
                     );
                   })}
@@ -92,25 +89,30 @@ const Footer = () => {
               </h2>
               {/* footer link */}
               <div className="flex flex-col gap-4">
-                {footerLinks.map((link, index) => {
-                  const Icon = link.icon;
+                {footerLinks.map((item, index) => {
+                  const Icon = item.icon;
                   return (
-                    <div
+                    <Link
+                      href={item.href}
                       key={index}
                       className="group flex items-center transition hover:translate-x-1 duration-300 cursor-pointer"
                     >
                       {/* Icon Circle */}
                       <div className="w-8 h-8 flex items-center justify-center">
-                        <Icon size={16} className="group-hover:text-purple-500" />
+                        <Icon
+                          size={16}
+                          className="group-hover:text-purple-500"
+                        />
                       </div>
                       {/* Title */}
-                      <span className="font-medium group-hover:text-purple-500">{link.name}</span>
-                    </div>
+                      <span className="font-medium group-hover:text-purple-500">
+                        {item.name}
+                      </span>
+                    </Link>
                   );
                 })}
               </div>
             </section>
-
           </div>
           {/* right side */}
           <div className="w-full md:w-[30%]">
@@ -128,7 +130,7 @@ const Footer = () => {
                   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-purple-600/20 text-purple-500">
                     <Mail size={18} />
                   </div>
-                  <span className="text-sm md:text-base text-gray-300">
+                  <span className="text-sm md:text-base text-gray-800 dark:text-gray-300">
                     naimurrahmun34@gmail.com
                   </span>
                 </div>
@@ -138,7 +140,7 @@ const Footer = () => {
                   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-purple-600/20 text-purple-500">
                     <Phone size={18} />
                   </div>
-                  <div className="flex flex-col text-sm md:text-base text-gray-300">
+                  <div className="flex flex-col text-sm md:text-base text-gray-800 dark:text-gray-300">
                     <span>+880 1568-450889</span>
                     <span>+880 1736-340278</span>
                   </div>
@@ -149,7 +151,7 @@ const Footer = () => {
                   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-purple-600/20 text-purple-500">
                     <MapPin size={18} />
                   </div>
-                  <span className="text-sm md:text-base text-gray-300">
+                  <span className="text-sm md:text-base text-gray-800 dark:text-gray-300">
                     Rangpur, Bangladesh
                   </span>
                 </div>

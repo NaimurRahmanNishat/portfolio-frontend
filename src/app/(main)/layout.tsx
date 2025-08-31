@@ -18,18 +18,16 @@ const layout = ({ children }: { children: React.ReactNode }) => {
           <Navbar />
           <div className="relative w-full min-h-screen dark:bg-black/60">
             <StairTransition>
-              <DotPattern className='opacity-8' />
+              <DotPattern className="opacity-8" />
               <main className="relative z-0">
                 <PageTransition>
-                  <TooltipProvider>
-                  {children}
-                  </TooltipProvider>
+                  <TooltipProvider>{children}</TooltipProvider>
                   <ScrollTop />
                 </PageTransition>
               </main>
+              <Footer />
             </StairTransition>
           </div>
-          <Footer />
         </ThemeProvider>
         <ToastContainer />
       </StoreProvider>
