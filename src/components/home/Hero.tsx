@@ -61,7 +61,7 @@ const Hero = () => {
           </SparklesText>
 
           {/* typewriter intro */}
-          <div className="pt-4 md:pt-8 text-sm md:text-lg w-full h-[180px] bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-cyan-600 to-indigo-600 font-normal">
+          <div className="pt-4 text-sm md:text-lg w-full h-[180px] bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-cyan-600 to-indigo-600 font-normal">
             <Typewriter
               options={{
                 strings: typewrite,
@@ -74,7 +74,7 @@ const Hero = () => {
           </div>
 
           {/* buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          <div className="flex flex-col sm:flex-row gap-4 mt-2">
             <ShinyButton className="py-3 px-6 border border-purple-500 rounded-md transition-all duration-300 flex items-center justify-center gap-2">
               <Link
                 href="/contact"

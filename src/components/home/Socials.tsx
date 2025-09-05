@@ -1,26 +1,50 @@
 import React from "react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
 
 // Social Icons
-import linkedin from "../../../public/skills/linkedin.png";
-import github from "../../../public/skills/github.png";
-import facebook from "../../../public/skills/facebook.png";
-import instagram from "../../../public/skills/instagram.png";
-import twitter from "../../../public/skills/twitter.png";
+import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { IconType } from "react-icons";
 
 interface socialLinksProps {
   path: string;
-  image: StaticImageData;
+  logo: IconType;
+  className?: string;
+  name: string;
 }
 
 const socialLinks: socialLinksProps[] = [
-  { path: "https://www.linkedin.com/in/naimur-rahman-0a8046381", image: linkedin },
-  { path: "https://github.com/NaimurRahmanNishat", image: github },
-  { path: "https://www.facebook.com/profile.php?id=61576332312271", image: facebook },
-  { path: "https://www.instagram.com/34naimurrahman", image: instagram },
-  { path: "https://x.com/naimurrahmun34", image: twitter },
+  { 
+    path: "https://www.linkedin.com/in/naimur-rahman-0a8046381", 
+    logo: FaLinkedin, 
+    className: "bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700", 
+    name: "LinkedIn" 
+  },
+  { 
+    path: "https://github.com/NaimurRahmanNishat", 
+    logo: FaGithub, 
+    className: "bg-gray-900 text-white p-2 rounded-full hover:bg-gray-800", 
+    name: "GitHub" 
+  },
+  { 
+    path: "https://www.facebook.com/profile.php?id=61576332312271", 
+    logo: FaFacebook, 
+    className: "bg-blue-700 text-white p-2 rounded-full hover:bg-blue-800", 
+    name: "Facebook" 
+  },
+  { 
+    path: "https://www.instagram.com/34naimurrahman", 
+    logo: FaInstagram, 
+    className: "bg-gradient-to-r from-purple-500 to-pink-500 text-white p-2 rounded-full hover:from-purple-600 hover:to-pink-600", 
+    name: "Instagram" 
+  },
+  { 
+    path: "https://x.com/naimurrahmun34", 
+    logo: FaXTwitter, 
+    className: "bg-black text-white p-2 rounded-full hover:bg-gray-800", 
+    name: "X" 
+  },
 ];
 
 const Socials = () => {
@@ -33,25 +57,13 @@ const Socials = () => {
               href={item.path}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:scale-110 transition-all duration-300 flex items-center justify-center"
+              className={`hover:scale-110 transition-all duration-300 flex items-center justify-center ${item.className}`}
             >
-              <Image src={item.image} alt="social icon" width={48} height={48}/>
+              <item.logo size={24} />
             </Link>
           </TooltipTrigger>
           <TooltipContent>
-            <p>
-              {item.path.includes("linkedin")
-                ? "LinkedIn"
-                : item.path.includes("github")
-                ? "GitHub"
-                : item.path.includes("facebook")
-                ? "Facebook"
-                : item.path.includes("instagram")
-                ? "Instagram"
-                : item.path.includes("x")
-                ? "X"
-                : "Profile"}
-            </p>
+            <p>{item.name}</p>
           </TooltipContent>
         </Tooltip>
       ))}

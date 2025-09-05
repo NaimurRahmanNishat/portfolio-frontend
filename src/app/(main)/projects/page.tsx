@@ -3,17 +3,8 @@ import { useState } from "react";
 import ProjectCard from "@/components/project/ProjectCard";
 import Error from "@/components/shared/Error";
 import Loading from "@/components/shared/Loading";
-import {
-  TProject,
-  useGetAllProjectsQuery,
-} from "@/lib/features/projects/projectApi";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { TProject, useGetAllProjectsQuery } from "@/lib/features/projects/projectApi";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 
 const categories = [
@@ -25,20 +16,13 @@ const categories = [
 
 const ProjectPage = () => {
   // new state for category and sort
-  const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
-    undefined
-  );
+  const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined);
   const [sortBy, setSortBy] = useState<string | undefined>("default"); // Default sort
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(8);
 
   // useGetAllProjectsQuery- page & limit parameters passed
-  const { data, isLoading, isError } = useGetAllProjectsQuery({
-    category: selectedCategory,
-    sortBy: sortBy,
-    page: page,
-    limit: limit,
-  });
+  const { data, isLoading, isError } = useGetAllProjectsQuery({ category: selectedCategory, sortBy: sortBy, page: page, limit: limit });
 
   // API response to projects & pagination given by backend
   const projects: TProject[] = data?.data?.projects || [];
