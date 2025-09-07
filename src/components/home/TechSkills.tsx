@@ -13,6 +13,8 @@ import chakra from "../../../public/skills/chakra.png";
 import motion from "../../../public/skills/motion.png";
 import bootstrap from "../../../public/skills/bootstrap.png";
 import html from "../../../public/skills/html.png";
+import chartjs from "../../../public/skills/chartjs.png";
+import daisy from "../../../public/skills/daisy.png";
 
 // Backend images
 import nodejs from "../../../public/skills/nodejs.png";
@@ -42,6 +44,8 @@ import postman from "../../../public/skills/postman.png";
 import vscode from "../../../public/skills/vscode.png";
 import figma from "../../../public/skills/figma.png";
 import vercel from "../../../public/skills/vercel.png";
+import linux from "../../../public/skills/linux.png";
+import netlify from "../../../public/skills/netlify.png";
 
 interface Technology {
     name: string;
@@ -60,15 +64,17 @@ const categories: Record<string, CategoryData> = {
         subtitle:
             "Building modern, responsive user interfaces with cutting-edge technologies",
         technologies: [
-            { name: "TailwindCSS", image: tailwind },
-            { name: "Redux", image: redux },
-            { name: "ReactJS", image: react },
-            { name: "NextJS", image: nextjs },
             { name: "HTML5", image: html },
             { name: "CSS3", image: css },
-            { name: "Chakra UI", image: chakra },
-            { name: "Framer Motion", image: motion },
+            { name: "TailwindCSS", image: tailwind },
             { name: "Bootstrap", image: bootstrap },
+            { name: "ReactJS", image: react },
+            { name: "NextJS", image: nextjs },
+            { name: "Redux", image: redux },
+            { name: "Chakra UI", image: chakra },
+            { name: "Dasiy UI", image: daisy },
+            { name: "Framer Motion", image: motion },
+            { name: "Chart.js", image: chartjs},
         ],
     },
     backend: {
@@ -95,9 +101,9 @@ const categories: Record<string, CategoryData> = {
             { name: "Javascript", image: javascript },
             { name: "Typescript", image: typescript },
             { name: "Python", image: python },
-            { name: "Java", image: java },
             { name: "C++", image: cpp },
             { name: "C", image: c },
+            { name: "Java", image: java },
         ],
     },
     tools: {
@@ -110,6 +116,9 @@ const categories: Record<string, CategoryData> = {
             { name: "Postman", image: postman },
             { name: "Figma", image: figma },
             { name: "Vercel", image: vercel },
+            { name: "Render", image: vercel},
+            { name: "Netlify", image: netlify },
+            { name: "Linux", image: linux},
         ],
     },
 };

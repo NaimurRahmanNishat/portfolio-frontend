@@ -56,10 +56,10 @@ const Photo = () => {
             <Image
               src={nishat}
               alt="Naimur Rahman Nishat"
+              width={500}
+              height={500}
               priority
-              quality={100}
-              fill
-              className="object-cover"
+              className="object-cover w-full h-full"
             />
           </div>
         </motion.div>
