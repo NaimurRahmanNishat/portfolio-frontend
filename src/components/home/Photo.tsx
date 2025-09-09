@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import nishat from "../../../public/nishat.png";
+import nishat from "../../../public/nishat.webp";
 
 const Photo = () => {
   return (
@@ -52,14 +52,13 @@ const Photo = () => {
           }}
           className="absolute inset-0 flex items-center justify-center"
         >
-          <div className="relative w-[300px] h-[300px] xl:w-[500px] xl:h-[500px] rounded-full overflow-hidden">
+          <div className="relative w-full max-w-5xl h-[300px] md:h-[290px] lg:h-[480px]">
             <Image
               src={nishat}
               alt="Naimur Rahman Nishat"
-              width={500}
-              height={500}
+              fill
               priority
-              className="object-cover w-full h-full"
+              className="object-cover rounded-full shadow-lg"
             />
           </div>
         </motion.div>

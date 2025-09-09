@@ -7,7 +7,7 @@ import Services from '@/components/home/Services';
 import Skills from '@/components/home/Skills';
 const Page = () => {
   return (
-    <div className="max-w-screen-xl container mx-auto px-4 min-h-screen">
+    <div>
       <Hero/>
       <Skills/>
       <MyJourny/>

@@ -24,10 +24,10 @@ const HeroImageCards: React.FC = () => {
           initial={{ x: card.side === "left" ? -200 : 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 50, delay: index * 0.8 }}
-          className="absolute border rounded-lg p-3 bg-purple-200 dark:bg-purple-900/30 max-w-[160px]"
+          className="absolute border rounded-lg p-3 bg-transparent max-w-[160px]"
           style={card.position}
         >
-          <h2 className="text-sm md:text-base font-semibold text-purple-700 dark:text-purple-200">
+          <h2 className="text-sm md:text-base font-semibold text-purple-700 dark:text-slate-400">
             {card.text}
           </h2>
         </motion.div>
