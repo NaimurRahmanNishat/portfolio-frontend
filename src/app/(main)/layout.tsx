@@ -18,12 +18,10 @@ const layout = ({ children }: { children: React.ReactNode }) => {
           <Navbar />
           <div className="relative w-full min-h-screen dark:bg-black/60">
             <StairTransition>
-              <main className="relative z-0">
                 <PageTransition>
                   <TooltipProvider>{children}</TooltipProvider>
                   <ScrollTop />
                 </PageTransition>
-              </main>
               <ScrollProgress />
               <Footer />
             </StairTransition>

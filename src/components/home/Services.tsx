@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Layers, Globe, Server, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -11,6 +11,12 @@ interface Service {
   icon: React.ReactNode;
   gradientColor: string;
   technologies: string[];
+}
+
+interface ParticleDot {
+  top: number;
+  left: number;
+  delay: number;
 }
 
 const services: Service[] = [
@@ -73,10 +79,42 @@ const services: Service[] = [
     ],
   },
 ];
+
 const Services = () => {
-  const [hoveredService, setHoveredService] = useState<string | null>(null);
+  const [, setHoveredService] = useState<string | null>(null);
+  const [particleDots, setParticleDots] = useState<ParticleDot[]>([]);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    // Generate particle dots only on the client side after mount
+    const dots = Array.from({ length: 20 }, (_, i) => ({
+      top: Math.random() * 100,
+      left: Math.random() * 100,
+      delay: i * 0.5,
+    }));
+    setParticleDots(dots);
+    setIsMounted(true);
+  }, []);
+
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden relative min-h-screen flex items-center justify-center bg-white dark:bg-black overflow-hidden">
+      {/* Particle Dots - Only render after client-side mount */}
+      {isMounted && (
+        <div className="absolute inset-0">
+          {particleDots.map((dot, i) => (
+            <div
+              key={i}
+              className="absolute w-2 h-2 bg-gray-400 dark:bg-purple-400 rounded-full animate-ping"
+              style={{
+                top: `${dot.top}%`,
+                left: `${dot.left}%`,
+                animationDelay: `${dot.delay}s`,
+              }}
+            />
+          ))}
+        </div>
+      )}
+
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full opacity-5">
