@@ -62,13 +62,13 @@ const AboutPage = () => {
   ];
   return (
     <div className="relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full opacity-10">
-              <DotPattern />
-            </div>
-            {/* Decorative glowing circles */}
-            <div className="absolute top-[-10%] left-[-10%] w-[400px] h-[400px] bg-purple-400/30 dark:bg-purple-600/20 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-pink-400/30 dark:bg-pink-600/20 rounded-full blur-3xl animate-pulse delay-700" />
-      
+      <div className="absolute top-0 left-0 w-full h-full opacity-10">
+        <DotPattern />
+      </div>
+      {/* Decorative glowing circles */}
+      <div className="absolute top-[-10%] left-[-10%] w-[400px] h-[400px] bg-purple-400/30 dark:bg-purple-600/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-pink-400/30 dark:bg-pink-600/20 rounded-full blur-3xl animate-pulse delay-700" />
+
       <div className="max-w-screen-xl container mx-auto px-4 min-h-screen relative z-10">
         {/* Header */}
         <div className="text-center py-8">
@@ -120,28 +120,38 @@ const AboutPage = () => {
                   <h2 className="text-2xl font-bold text-white mb-2">
                     Naimur Rahman
                   </h2>
-                  <p className="text-purple-400 text-lg">
-                    Software Engineer
-                  </p>
+                  <p className="text-purple-400 text-lg">Software Engineer</p>
                 </div>
 
                 {/* Contact Info */}
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center text-gray-300">
                     <MapPin className="w-4 h-4 mr-3 text-purple-400" />
-                    <span className="text-gray-800 dark:text-gray-200 font-medium">Rangpur, Bangladesh</span>
+                    <span className="text-gray-800 dark:text-gray-200 font-medium">
+                      Rangpur, Bangladesh
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <Mail className="w-4 h-4 mr-3 text-purple-400" />
-                    <span className="text-gray-800 dark:text-gray-200 font-medium">naimurrahmun34@gmail.com</span>
+                    <span className="text-gray-800 dark:text-gray-200 font-medium">
+                      naimurrahmun34@gmail.com
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <User className="w-4 h-4 mr-3 text-purple-400" />
-                    <span className="text-gray-800 dark:text-gray-200 font-medium">naimurrahman</span>
+                    <span className="text-gray-800 dark:text-gray-200 font-medium">
+                      naimurrahman
+                    </span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <Globe className="w-4 h-4 mr-3 text-purple-400" />
-                    <Link href="https://portfolios-sable-five.vercel.app/" target="_blank" className="text-gray-800 dark:text-gray-200 font-medium">https://portfolios-sable-five.vercel.app</Link>
+                    <Link
+                      href="https://portfolios-sable-five.vercel.app/"
+                      target="_blank"
+                      className="text-gray-800 dark:text-gray-200 font-medium"
+                    >
+                      https://portfolios-sable-five.vercel.app
+                    </Link>
                   </div>
                 </div>
 
@@ -204,20 +214,21 @@ const AboutPage = () => {
                   </p>
                 </div>
                 <div className="flex gap-4 mt-6">
-                  <Button
-                    variant="outline"
-                    className="border-purple-600 cursor-pointer text-purple-400 hover:bg-purple-600 hover:text-white"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View Projects
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="border-purple-600 cursor-pointer text-purple-400 hover:bg-purple-600 hover:text-white"
-                  >
-                    <Mail className="w-4 h-4 mr-2" />
-                    Contact Me
-                  </Button>
+                  <Link href="/projects">
+                    <ShinyButton className="border-purple-600 px-2 py-1 border rounded-md cursor-pointer text-purple-400 hover:bg-purple-600 hover:text-white">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      View Projects
+                    </ShinyButton>
+                  </Link>
+                  <Link href="/contact">
+                    <Button
+                      variant="outline"
+                      className="border-purple-600 cursor-pointer text-purple-400 hover:bg-purple-600 hover:text-white"
+                    >
+                      <Mail className="w-4 h-4 mr-2" />
+                      Contact Me
+                    </Button>
+                  </Link>
                 </div>
               </Card>
 
@@ -312,7 +323,9 @@ const AboutPage = () => {
                     </div>
                     <div className="flex items-center text-green-400 mb-2">
                       <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                      <span className="text-sm">Dhaka International University</span>
+                      <span className="text-sm">
+                        Dhaka International University
+                      </span>
                     </div>
                     <p className="text-gray-400 text-sm mb-3">
                       Focused on software engineering, algorithms, and web

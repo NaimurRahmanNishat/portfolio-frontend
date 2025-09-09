@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Calendar, User } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useGetSingleBlogQuery } from "@/lib/features/blogs/blogApi";
 import Loading from "@/components/shared/Loading";
