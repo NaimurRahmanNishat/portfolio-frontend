@@ -23,6 +23,9 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
         </div>
+          <span className="absolute top-5 right-3 px-3 py-1 bg-purple-600 text-white border border-purple-400 rounded-full text-xs">
+          {blog.category}
+        </span>
       </div>
 
       {/* Content */}
@@ -51,7 +54,6 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
                 className="object-cover"
               />
             </div>
-            <span>Author</span>
           </div>
         </div>
 

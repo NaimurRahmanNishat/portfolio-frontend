@@ -61,7 +61,7 @@ const Hero = () => {
               </h1>
             </SparklesText>
             {/* Typewriter intro */}
-            <div className=" text-[16px] font-quin md:text-lg w-full md:h-[280px] h-[280px] text-left text-gray-600 dark:text-gray-500">
+            <div className=" text-[16px] font-quin md:text-lg w-full md:h-[280px] h-[320px] text-left text-gray-600 dark:text-gray-500">
               <Typewriter
                 options={{
                   strings: typewrite,

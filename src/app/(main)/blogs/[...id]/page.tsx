@@ -10,39 +10,29 @@ import Error from "@/components/shared/Error";
 const SingleBlogPage = () => {
   const { id } = useParams();
   // Use RTK Query instead of manual fetch
-  const { data: blog, isLoading, isError } = useGetSingleBlogQuery(id as string);
+  const {
+    data: blog,
+    isLoading,
+    isError,
+  } = useGetSingleBlogQuery(id as string);
 
   if (isLoading) {
-    return <Loading/>
+    return <Loading />;
   }
 
   if (isError || !blog) {
-    return <Error/>
+    return <Error />;
   }
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-10">
-      {/* Thumbnail */}
-      <div className="w-full h-fit rounded-2xl overflow-hidden mb-8">
-        <Image
-          src={
-            blog.thumbnail ||
-            "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png"
-          }
-          alt={blog.title}
-          width={1200}
-          height={600}
-          className="w-full h-full object-cover"
-        />
+      {/* category */}
+      <div className="mb-8">
+        <h2 className="px-3 py-1 text-5xl w-fit rounded-full bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white font-medium font-quin">
+          {blog.category}
+        </h2>
       </div>
-
-      {/* Title & Subtitle */}
-      <h1 className="text-4xl font-bold text-white mb-4">{blog.title}</h1>
-      {blog.subtitle && (
-        <p className="text-xl text-gray-400 mb-6">{blog.subtitle}</p>
-      )}
-
-      {/* Meta Info */}
+            {/* Meta Info */}
       <div className="flex items-center gap-6 text-sm text-gray-400 mb-8">
         <div className="flex items-center gap-2">
           <Calendar size={16} />
@@ -64,10 +54,26 @@ const SingleBlogPage = () => {
           </div>
           <span>Author</span>
         </div>
-        <span className="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-xs">
-          {blog.category}
-        </span>
       </div>
+      {/* Thumbnail */}
+      <div className="w-full h-fit rounded-2xl overflow-hidden mb-8">
+        <Image
+          src={
+            blog.thumbnail ||
+            "https://mailrelay.com/wp-content/uploads/2018/03/que-es-un-blog-1.png"
+          }
+          alt={blog.title}
+          width={1200}
+          height={600}
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Title & Subtitle */}
+      <h1 className="text-4xl font-bold text-white mb-4">{blog.title}</h1>
+      {blog.subtitle && (
+        <p className="text-xl text-gray-400 mb-6">{blog.subtitle}</p>
+      )}
 
       {/* Content */}
       <div className="prose prose-invert prose-lg max-w-none">
