@@ -18,8 +18,8 @@ const certifications: Certification[] = [
   {
     id: 'next-level',
     title: 'Next Level Web Development',
-    provider: 'Programming Hero',
-    year: '2024-2025',
+    provider: 'Udemy',
+    year: '2022-2023',
     credential: 'WEB-A378',
     skills: ['TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'React', 'JS Data'],
     gradientColor: 'from-purple-500 to-pink-600',
@@ -28,7 +28,7 @@ const certifications: Certification[] = [
   {
     id: 'redux-way',
     title: 'Thinking in a Redux Way',
-    provider: 'Learn with Sumit',
+    provider: 'Programming with Mosh',
     year: '2024',
     credential: 'LWS7788-788001',
     skills: ['Redux', 'React', 'RTK Query', 'Tailwind CSS', 'JavaScript', 'JSON-Server', 'JS more'],
@@ -38,7 +38,7 @@ const certifications: Certification[] = [
   {
     id: 'complete-web',
     title: 'Complete Web Development',
-    provider: 'Programming Hero',
+    provider: 'Programming with Mosh',
     year: '2023-2024',
     credential: 'WEB-A378',
     skills: ['HTML', 'CSS', 'Tailwind CSS', 'JavaScript', 'DOM', 'React.js', 'JS more'],
@@ -48,7 +48,7 @@ const certifications: Certification[] = [
 ];
 
 const Qualification = () => {
-   const [hoveredCert, setHoveredCert] = useState<string | null>(null);
+   const [, setHoveredCert] = useState<string | null>(null);
   return (
      <div className="min-h-screen bg-transparent relative overflow-hidden">
       {/* Background Pattern */}
@@ -104,7 +104,7 @@ const Qualification = () => {
                   </h3>
                   <div className="flex items-center gap-2 text-slate-400 mb-4">
                     <MapPin className="w-4 h-4" />
-                    <span>National University</span>
+                    <span>Dhaka International University</span>
                   </div>
                   <p className="text-slate-300 mb-6">
                     Focused on software engineering, algorithms, and web technologies
@@ -112,14 +112,14 @@ const Qualification = () => {
                 </div>
                 <div className="flex items-center gap-2 px-3 py-1 bg-slate-700/50 rounded-full border border-slate-600/50">
                   <Calendar className="w-4 h-4 text-slate-400" />
-                  <span className="text-sm text-slate-300">2020 - 2023</span>
+                  <span className="text-sm text-slate-300">2021 - 2024</span>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex items-center gap-2">
                   <Star className="w-4 h-4 text-green-400" />
-                  <span className="text-green-400 font-semibold">3.78 GPA</span>
+                  <span className="text-green-400 font-semibold">3.45 CGPA</span>
                 </div>
               </div>
 
