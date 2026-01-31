@@ -59,7 +59,7 @@ This is the **frontend** of my **portfolio website**, built using **Next.js (Typ
 1️⃣ **Clone the Repository**
 
 ```bash
-  git clone https://github.com/Shakilofficial/portfolio-client.git
+  https://github.com/NaimurRahmanNishat/portfolio-frontend.git
   cd frontend
 ```
 
